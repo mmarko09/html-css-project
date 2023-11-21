@@ -1,0 +1,297 @@
+/* 1rem = 1em = 16px */
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* SMALLER LAPTOPS - 1400px / 16px = 87.5em = 88rem = 1408px */
+@media (max-width: 88em) {
+    .hero {
+        max-width: 120rem;
+        padding: 0 3.2rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+}
+
+/* BELLOW 1200px */
+@media (max-width: 75rem) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .title {
+        font-size: 6.2rem;
+    }
+
+    .pricing-container {
+        width: 50rem;
+    }
+
+    .heading-tertiary,
+    .section-price-title,
+    .testimonial-title {
+        font-size: 3.6rem;
+    }
+}
+
+/* BELLOW 1008px */
+
+@media (max-width: 63em) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-list {
+        font-size: 2rem;
+        gap: 2.4rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .title {
+        font-size: 5.2rem;
+    }
+
+    .text-description {
+        max-width: 65rem;
+        align-self: center;
+        padding: 0 4.8rem;
+    }
+
+    .hero-img-box {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
+    }
+
+    .pricing-container {
+        width: 45rem;
+    }
+
+    .description {
+        font-size: 1.6rem;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial {
+        width: 60rem;
+        justify-self: center;
+        line-height: 1.5;
+    }
+}
+
+/* ---- BELOW 784px ---- */
+@media (max-width: 49em) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 4.8rem;
+    }
+
+    /* ***************
+  	Mobile Navigation
+  **************** */
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .header {
+        position: relative;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        transition: all 0.3s ease-in;
+
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .mobile-btn[name="menu-outline"] {
+        display: block;
+    }
+
+    .overflow {
+        overflow-y: hidden;
+    }
+
+    .nav-open .nav-list {
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        font-size: 4rem;
+    }
+
+    .nav-open .mobile-btn[name="menu-outline"] {
+        display: none;
+    }
+    .nav-open .mobile-btn[name="close-outline"] {
+        display: block;
+    }
+
+    .container.about-us {
+        max-width: 50rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 3.2rem;
+    }
+
+    .about-us .subheading {
+        margin-bottom: 3.2rem;
+    }
+
+    .text-about .heading-tertiary {
+        margin: 0;
+    }
+
+    .text-about.our-story {
+        grid-row: 3;
+    }
+
+    .img[alt="Team photo"] {
+        grid-row: 8;
+        margin-bottom: 0 !important;
+    }
+
+    .img-about {
+        margin-bottom: 4.8rem;
+    }
+
+    .sentence {
+        width: 40rem;
+        margin: 0 auto;
+    }
+
+    .heading-tertiary,
+    .section-price-title,
+    .testimonial-title {
+        margin-bottom: 4.4rem;
+        font-size: 3.2rem;
+    }
+}
+
+/* ---- BELOW 560px ---- */
+@media (max-width: 35em) {
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .logo span:last-child {
+        font-size: 4.8rem;
+    }
+
+    .container {
+        width: 35rem;
+    }
+
+    .hero {
+        gap: 3.2rem;
+    }
+
+    .title {
+        font-size: 3.6rem;
+    }
+
+    .text-description {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0 2.4rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .pricing-container {
+        width: 30rem;
+    }
+
+    .sentence {
+        width: 30rem;
+    }
+    .contact-us {
+        width: 30rem;
+        font-size: 2rem;
+        padding: 2.2rem;
+    }
+
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .input-info-container {
+        width: 25rem;
+        font-size: 1.2rem;
+    }
+
+    .subheading {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-title {
+        font-size: 2.4rem;
+    }
+
+    .testimonial {
+        width: 30rem;
+        gap: 1rem;
+    }
+
+    .comment {
+        font-size: 0.8rem;
+    }
+
+    .customer-name {
+        font-size: 0.8rem;
+    }
+
+    .evaluations {
+        font-size: 1rem;
+    }
+
+    .informations {
+        width: 15rem;
+        font-size: 1.2rem;
+    }
+}

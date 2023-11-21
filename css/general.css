@@ -1,0 +1,68 @@
+/* --- 01 TYPOGRAPHY SYSTEM 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* Do not work on Safari */
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--main-text-color);
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+}
+
+*:focus {
+    outline: none;
+    /* outline: 4px dotted var(--dark-pink-color);
+    outline-offset: 1rem; */
+    box-shadow: 0 0 4px 4px rgba(161, 38, 89, 0.37);
+}
+
+.btn-cta:focus,
+.nav-cta:focus {
+    box-shadow: 0 0 4px 4px #6c6c6c;
+}
+
+.img {
+    width: 100%;
+    display: block;
+}
+
+.subheading {
+    display: block;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--dark-pink-color);
+    margin-bottom: 1.6rem;
+}
+
+.heading-tertiary {
+    font-size: 4.8rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    color: var(--main-text-color);
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
