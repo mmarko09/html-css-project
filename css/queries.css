@@ -101,6 +101,18 @@
         row-gap: 4.8rem;
     }
 
+    .logo {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    .logo span:last-child {
+        text-transform: uppercase;
+        color: var(--dark-pink-color);
+        font-size: 3.6rem;
+    }
+
     /* ***************
   	Mobile Navigation
   **************** */
@@ -125,6 +137,7 @@
         justify-content: center;
         gap: 3.2rem;
         transition: all 0.3s ease-in;
+        font-size: 3rem;
 
         transform: translateX(100%);
         opacity: 0;
@@ -151,7 +164,6 @@
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
-        font-size: 4rem;
     }
 
     .nav-open .mobile-btn[name="menu-outline"] {
@@ -211,7 +223,7 @@
     }
 
     .logo span:last-child {
-        font-size: 4.8rem;
+        font-size: 3rem;
     }
 
     .container {
@@ -220,6 +232,10 @@
 
     .hero {
         gap: 3.2rem;
+    }
+
+    .hero-img-box {
+        max-width: 100%;
     }
 
     .title {
